@@ -179,6 +179,7 @@ section.sec-padding{
  .form form [type='submit']{
      padding: 15px;
      width: 13%;
+     height: 53px;
      background-color: #2337B8;
      border: 1px solid #2337B8;
      color: #F8F8F8;
