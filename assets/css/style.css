@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+    font-family: freight-sans-pro, sans-serif;
+    color: #121212;
+}
+
+body{
+    margin: 0;
+}
+h1{
+    font-weight: 600;
+}
+h2,
+h3,
+h4{
+    font-weight: 400;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1.1em;
+    color: #64605F;
+    line-height: 1.5em;
+}
+
+section.sec-padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container{
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
+.section-tag-blue,
+.section-tag-red,
+.section-tag-purple{
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.section-tag-blue{
+    color: #2337B8;
+    background-color: #F0F2FF;
+}
+.section-tag-red{
+    color: #BA4238;
+    background-color: #FBE8E1;
+}
+.section-tag-purple{
+    color: #642D92;
+    background-color: #E8DFEF;
+}
+.text-center{
+   text-align: center; 
+}
+.line-text{
+    color: #2337B8;
+    position: relative;
+    margin-left: 110px;
+}
+.line-text::before{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #2337B8;
+    position: absolute;
+    left: -100px;
+    top: 17px;
+}
+
+/* =======================
+ Welcome Banner 
+ ========================= */
+
+.banner .banner-img img{
+    width: 100%;
+    margin-top: 70px;
+}
+.banner{
+    padding-top: 150px;
+}
+.banner h1{
+    font-size: 2.5em;
+}
+
+/* =======================
+ Digital Strategies 
+ ========================= */
+
+.strategy .strategy-text{
+    margin-top: 80px;
+}
+.strategy .banner-img{
+    position: relative;
+}
+.strategy .banner-img img{
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* =======================
+ Our Philosophy
+ ========================= */
+
+ .philosophy .philosophy-text{
+     margin-top: 80px;
+ }
+
+/* =======================
+ Who we are
+ ========================= */
+ .wwa{
+     padding-top: 10px;
+     padding-bottom: 60px;
+     background-color: #F8F8F8;
+     margin-top: 70px;
+ }
+ .wwa .wwa-text{
+     margin-top: 50px;
+ }
+
+/* =======================
+ Early-access
+ ========================= */
+ .early-access .early-access-text{
+     margin-top: 80px;
+     padding: 50px 15px;
+     background-color: #F8F9FF;
+ }
+ /* .early-access .early-access-text img{
+     width: 100%;
+ } */
+ .early-access .early-access-text a{
+     text-decoration: none;
+     color: #2337B8;
+     font-weight: 500;
+ }
+
+ /* =======================
+ Our Portfolio Companies
+ ========================= */
+.portfolio .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio .logo img{
+    width: 120px;
+}
+
+/* =======================
+ Newsletter
+ ========================= */
+ .form form{
+     position: relative;
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: space-between;
+     max-width: 400px;
+ }
+ .newsletter .form form{
+     
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .form form [type='email']{
+     width: 85%;
+     padding: 15px;
+     border: 1px solid #2337B8;
+     font-size: 16px;
+     display: block;
+ }
+ .form form [type='submit']{
+     padding: 15px;
+     width: 13%;
+     background-color: #2337B8;
+     border: 1px solid #2337B8;
+     color: #F8F8F8;
+     font-size: 16px;
+     margin-left: 5px;
+     border-radius: 5px;
+     display: block;
+ }
+.newsletter h2,
+.newsletter p{
+     text-align: center;
+}
+.newsletter .app-store{
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter .app-store img{
+     width: 48%;
+}
+
+ /* =======================
+ Testimonies 
+ ========================= */
+.testimony{
+    background-color: #F0F2FF;
+}
+.testimony h2,
+.testimony .list .meta h3,
+.testimony .list .meta p{
+    text-align: center;
+}
+.testimony h2,
+.testimony .list .meta{
+    max-width: 700px;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.testimony .list .meta{
+    padding: 70px 30px;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 120px;
+}
+.testimony .list .meta img{
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 35%;
+}
+
+ /* =======================
+ Recognized
+ ========================= */
+section.recognized h2{
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .recognized .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.recognized .logo div{
+    width: 120px;
+    margin-bottom: 40px;
+}
+.recognized .logo img{
+    width: 100%;
+}
+
+
+ /* =======================
+ Footer
+ ========================= */
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F5F6FC;
+    text-align: center;
+}
+footer .logo{
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    mix-blend-mode:luminosity;
+}
+footer .footer-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+footer .footer-link a {
+    text-decoration: none;
+    color: #121212;
+    display: block;
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+
+    /* Testimony */
+    .testimony .list .meta img{
+        left: 40%;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+    /* Banner */
+    .banner .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner .container .banner-text{
+        width: 55%;
+        
+    }
+    .banner .container .banner-text h1{
+        font-size: 3em;
+        margin-bottom: 0px;
+    }
+    /* .banner .container .banner-img{
+        width: 35%;
+    } */
+    .banner .container .banner-img img{
+        margin-top: 0px;
+    }
+    .banner-img{
+        max-width: 500px !important;
+    }
+
+    /* Strategy */
+    .strategy .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .strategy .container.reverse{
+        flex-direction: row-reverse;
+    }
+    .strategy .container .strategy-text{
+        width: 45%;
+        margin-top: 100px;
+    }
+
+    /* Philosophy */
+    .philosophy .container .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .philosophy .container .wrapper .philosophy-text{
+        width: 47%;
+        margin-top: 0px;
+    }
+
+    /* Who we are */
+    .wwa .container .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wwa .container .wrapper .wwa-text{
+        width: 32%;
+        margin-top: 0px;
+    }
+
+    /* early-access */
+    .early-access .container .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .early-access .container .wrapper .early-access-text{
+        width: 32%;
+        margin-top: 0px;
+    }
+
+    /* Newsletter */
+    .newsletter .container .form{
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .newsletter .container .wrapper-2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletter .container .wrapper-2 .meta{
+        width: 32%;
+        margin-top: 0px;
+    }
+
+    /* Footer */
+    footer .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container img{
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 153px;
+        height: 50px;
+    }
+    footer .footer-link{
+        width: 400px;
+    }
+    footer .container .copyright{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
