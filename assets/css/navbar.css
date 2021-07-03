@@ -14,6 +14,7 @@ header{
 }
 .navbar .menu_list a{
     display: block;
+    font-weight: 500;
 }
 .navbar{
     margin: 0 auto;
@@ -34,8 +35,8 @@ header{
 
 }
 .navbar .logo1{
-    width: 93px;
-    height: 55px;
+    width: 53px;
+    height: 32px;
 }
 .navbar,
 .navbar .signup{
@@ -104,6 +105,10 @@ header.open_nav{
 @media (min-width: 1024px){
     .navbar{
         max-width: 1024px;
+    }
+    .navbar .logo1{
+        width: 93px;
+        height: 55px;
     }
     .navbar .hamburger_menu{
         display: none;
