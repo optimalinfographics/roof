@@ -12,6 +12,9 @@ header{
     font-weight: 300;
     font-size: 16px;
 }
+.navbar .menu_list a{
+    display: block;
+}
 .navbar{
     margin: 0 auto;
     position: relative;
@@ -20,14 +23,19 @@ header{
 }
 .navbar .menu_list a:hover{
     font-weight: 400;
-    color: #46B4A1;
+    color: #E8692B;
     transition: .3s ease-in-out;
 }
 .navbar .menu_list{
-    display: none;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
 }
 .navbar .logo1{
-    width: 150px;
+    width: 93px;
+    height: 55px;
 }
 .navbar,
 .navbar .signup{
@@ -103,12 +111,12 @@ header.open_nav{
     .navbar .signup{
         width: 150px;
     }
-    .navbar .menu_list{
+    /* .navbar .menu_list{
         display: flex;
         margin-top: 10px;
         justify-content: space-between;
         width: 50%;
-    }
+    } */
     .navbar .dropdown_list{
         display: none;
     }

@@ -45,7 +45,7 @@ section.sec-padding{
     font-weight: 600;
 }
 .section-tag-blue{
-    color: #2337B8;
+    color: #E8692B;
     background-color: #F0F2FF;
 }
 .section-tag-red{
@@ -60,7 +60,7 @@ section.sec-padding{
    text-align: center; 
 }
 .line-text{
-    color: #2337B8;
+    color: #E8692B;
     position: relative;
     margin-left: 110px;
 }
@@ -68,7 +68,7 @@ section.sec-padding{
     content: '';
     width: 80px;
     height: 2px;
-    background-color: #2337B8;
+    background-color: #E8692B;
     position: absolute;
     left: -100px;
     top: 17px;
@@ -88,20 +88,51 @@ section.sec-padding{
 .banner h1{
     font-size: 2.5em;
 }
+.banner p{
+    margin-bottom: 30px;
+}
+.banner .banner-link{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #E8692B;
+    color: #fff;
+}
 
 /* =======================
  Digital Strategies 
  ========================= */
-
-.strategy .strategy-text{
-    margin-top: 80px;
-}
-.strategy .banner-img{
+section{
     position: relative;
 }
-.strategy .banner-img img{
+section.left-bg::before{
+    content: '';
+    height: 60%;
+    width: 40%;
+    bottom: 20px;
+    position: absolute;
+    background-color: #FFF0E8;
+    z-index: -10;
+}
+section.right-bg::after{
+    content: '';
+    height: 60%;
+    width: 40%;
+    bottom: 20px;
+    position: absolute;
+    background-color: #FFF0E8;
+    z-index: -10;
+    right: 0px;
+}
+
+.section .section-text{
+    margin-top: 80px;
+}
+.section .banner-img{
+    position: relative;
+}
+.section .banner-img img{
     margin-top: 70px;
-    width: 100%;
+    width: 80%;
 }
 
 /* =======================
@@ -131,14 +162,14 @@ section.sec-padding{
  .early-access .early-access-text{
      margin-top: 80px;
      padding: 50px 15px;
-     background-color: #F8F9FF;
+     background-color: #FAEFEA;
  }
  /* .early-access .early-access-text img{
      width: 100%;
  } */
  .early-access .early-access-text a{
      text-decoration: none;
-     color: #2337B8;
+     color: #E8692B;
      font-weight: 500;
  }
 
@@ -172,7 +203,7 @@ section.sec-padding{
  .form form [type='email']{
      width: 85%;
      padding: 15px;
-     border: 1px solid #2337B8;
+     border: 1px solid #E8692B;
      font-size: 16px;
      display: block;
  }
@@ -180,8 +211,8 @@ section.sec-padding{
      padding: 15px;
      width: 13%;
      height: 53px;
-     background-color: #2337B8;
-     border: 1px solid #2337B8;
+     background-color: #E8692B;
+     border: 1px solid #E8692B;
      color: #F8F8F8;
      font-size: 16px;
      margin-left: 5px;
@@ -208,7 +239,7 @@ section.sec-padding{
  Testimonies 
  ========================= */
 .testimony{
-    background-color: #F0F2FF;
+    background-color: #FAEFEA;
 }
 .testimony h2,
 .testimony .list .meta h3,
@@ -267,11 +298,12 @@ section.recognized h2{
 footer{
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #F5F6FC;
+    background-color: #FAEFEA;
     text-align: center;
 }
 footer .logo{
-    width: 150px;
+    width: 93px;
+    height: 55px;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -298,10 +330,38 @@ footer .footer-link a {
     .container {
         max-width: 720px;
     }
+    /* Welcome Banner */
+    .banner .banner-img img{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    /* Section Image */
+    .section .banner-img{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
     /* Testimony */
     .testimony .list .meta img{
         left: 40%;
+    }
+
+    /* BG Layer */
+    section.left-bg::before{
+        content: '';
+        height: 65%;
+        width: 40%;
+        bottom: 40px;
+    }
+    section.right-bg::after{
+        content: '';
+        height: 65%;
+        width: 50%;
+        bottom: 40px;
     }
 }
 
@@ -327,20 +387,27 @@ footer .footer-link a {
     } */
     .banner .container .banner-img img{
         margin-top: 0px;
+        width: 100%;
     }
-    .banner-img{
-        max-width: 500px !important;
+    .img-size{
+        max-width: 300px !important;
+    }
+    /* Section Image */
+    .section .banner-img{
+        max-width: 400px;
+        margin-right: 0px;
+        margin-left: 50px;
     }
 
-    /* Strategy */
-    .strategy .container{
+    /* section */
+    .section .container{
         display: flex;
         justify-content: space-between;
     }
-    .strategy .container.reverse{
+    .section .container.reverse{
         flex-direction: row-reverse;
     }
-    .strategy .container .strategy-text{
+    .section .container .section-text{
         width: 45%;
         margin-top: 100px;
     }
@@ -398,8 +465,8 @@ footer .footer-link a {
     footer .container img{
         margin-right: 0px;
         margin-left: 0px;
-        width: 153px;
-        height: 50px;
+        width: 93px;
+        height: 55px;
     }
     footer .footer-link{
         width: 400px;
@@ -407,10 +474,46 @@ footer .footer-link a {
     footer .container .copyright{
         margin-top: 20px;
     }
+    /* Testimony */
+    .testimony .list .meta img{
+        left: 43%;
+    }
 }
 
+@media (min-width: 1024px){
+    .section .container .section-text {
+        width: 38%;
+        margin-top: 200px;
+    }
+    .banner .container .banner-img{
+        width: 70%;
+    }
+
+    /* BG Layer */
+    section.left-bg::before{
+        content: '';
+        height: 79%;
+        width: 30%;
+        bottom: 35px;
+    }
+    section.right-bg::after{
+        content: '';
+        height: 79%;
+        width: 30%;
+        bottom: 30px;
+    }
+}
 @media (min-width: 1200px){
-    .container {
+    /* .container {
         max-width: 1140px;
+    } */
+}
+@media (min-width: 1280px){
+    /* .container {
+        max-width: 1200px;
+    } */
+    .section .container .section-text {
+        width: 38%;
+        margin-top: 200px;
     }
 }

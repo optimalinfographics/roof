@@ -1,0 +1,58 @@
+:root {
+    /* Colors: */
+    --unnamed-color-121212: #121212;
+
+    /* Font/text values */
+    --unnamed-font-family-dm-sans: DM Sans;
+    --unnamed-font-family-proxima-nova: Proxima Nova;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-28: 28px;
+    --unnamed-font-size-48: 48px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-38: 38px;
+    --unnamed-line-spacing-48: 48px;
+    --unnamed-line-spacing-58: 58px;
+    }
+
+    /* Character Styles */
+    .unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-24);
+    line-height: var(--unnamed-line-spacing-38);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-121212);
+    }
+    .unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-dm-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-28);
+    line-height: var(--unnamed-line-spacing-48);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-121212);
+    }
+    .unnamed-character-style-3 {
+    font-family: var(--unnamed-font-family-dm-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-48);
+    line-height: var(--unnamed-line-spacing-58);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-121212);
+    }
+    .unnamed-character-style-4 {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-121212);
+}
