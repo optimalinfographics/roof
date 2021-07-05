@@ -369,6 +369,9 @@ footer .footer-link a {
     .container {
         max-width: 960px;
     }
+    section.section{
+        height: 100vh;
+    }
     /* Banner */
     .banner .container{
         display: flex;
@@ -390,7 +393,7 @@ footer .footer-link a {
         width: 100%;
     }
     .img-size{
-        max-width: 300px !important;
+        max-width: 500px !important;
     }
     /* Section Image */
     .section .banner-img{
@@ -403,12 +406,16 @@ footer .footer-link a {
     .section .container{
         display: flex;
         justify-content: space-between;
+        margin-top: 90px;
     }
     .section .container.reverse{
         flex-direction: row-reverse;
     }
     .section .container .section-text{
         width: 45%;
+        margin-top: 100px;
+    }
+    .section .container .section-text h2{
         margin-top: 100px;
     }
 
