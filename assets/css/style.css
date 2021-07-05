@@ -373,21 +373,25 @@ footer .footer-link a {
         height: 100vh;
     }
     /* Banner */
+    section.banner{
+        height: 75vh;
+    }
     .banner .container{
         display: flex;
         justify-content: space-between;
+        margin-top: 80px;
     }
     .banner .container .banner-text{
-        width: 55%;
+        max-width: 400px;
         
     }
     .banner .container .banner-text h1{
-        font-size: 3em;
+        font-size: 2.5em;
         margin-bottom: 0px;
     }
-    /* .banner .container .banner-img{
-        width: 35%;
-    } */
+    .banner .container .banner-img{
+        width: 400px;
+    }
     .banner .container .banner-img img{
         margin-top: 0px;
         width: 100%;
