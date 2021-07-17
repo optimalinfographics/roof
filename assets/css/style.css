@@ -189,6 +189,9 @@ section.right-bg::after{
 /* =======================
  Newsletter
  ========================= */
+ .newsletter {
+     margin-top: 100px;
+ }
  .form form{
      position: relative;
      margin-bottom: 30px;
@@ -425,9 +428,6 @@ footer .footer-link a {
         height: 100vh;
     }
     /* Banner */
-    section.banner{
-        height: 75vh;
-    }
     .banner .container{
         display: flex;
         justify-content: space-between;
@@ -555,23 +555,31 @@ footer .footer-link a {
     }
 
     /* BG Layer */
-    section.left-bg::before{
-        content: '';
-        height: 79%;
-        width: 30%;
-        bottom: 80px;
+    section.left-bg,
+    section.right-bg{
+        position: relative;
     }
+    section.left-bg::before,
+    section.right-bg::after{
+        content: '';
+        height: 97%;
+        width: 30%;
+        bottom: -110px;
+    }
+    
+    section .banner-im img{
+        top: 30px;
+        position: relative;
+    }
+}
+@media (min-width: 1200px){
+    section.left-bg::before,
     section.right-bg::after{
         content: '';
         height: 79%;
         width: 30%;
         bottom: 80px;
     }
-}
-@media (min-width: 1200px){
-    /* .container {
-        max-width: 1140px;
-    } */
 }
 @media (min-width: 1280px){
     /* .container {
