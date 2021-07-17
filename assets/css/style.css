@@ -17,6 +17,7 @@ h4{
 }
 h2{
     font-size: 2em;
+    font-weight: 600;
 }
 h3{
     font-size: 1.5em;
@@ -159,14 +160,14 @@ section.right-bg::after{
 /* =======================
  Early-access
  ========================= */
- .early-access .early-access-text{
-     margin-top: 80px;
-     padding: 50px 15px;
+ .early-access {
      background-color: #FAEFEA;
  }
- /* .early-access .early-access-text img{
-     width: 100%;
- } */
+ .early-access .early-access-text{
+     margin-top: 80px;
+     padding: 50px 20px;
+     background-color: #ffffff;
+ }
  .early-access .early-access-text a{
      text-decoration: none;
      color: #E8692B;
@@ -267,7 +268,9 @@ section.right-bg::after{
     top: -40px;
     left: 35%;
 }
-
+/* .testimony .carousel-box{
+    display: none;
+} */
  /* =======================
  Recognized
  ========================= */
@@ -284,7 +287,7 @@ section.recognized h2{
     margin-top: 40px;
 }
 .recognized .logo div{
-    width: 120px;
+    width: 180px;
     margin-bottom: 40px;
 }
 .recognized .logo img{
@@ -324,12 +327,47 @@ footer .footer-link a {
     text-align: center;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
 
 
 @media (min-width: 768px){
     .container {
         max-width: 720px;
     }
+    
     /* Welcome Banner */
     .banner .banner-img img{
         width: 70%;
@@ -367,7 +405,13 @@ footer .footer-link a {
 
 @media (min-width: 992px){
     .container {
-        max-width: 960px;
+        max-width: 1111px;
+    }
+    .banner .banner-img img{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
     }
     section.section{
         height: 100vh;
@@ -382,7 +426,7 @@ footer .footer-link a {
         margin-top: 80px;
     }
     .banner .container .banner-text{
-        max-width: 400px;
+        max-width: 600px;
         
     }
     .banner-text h1{
@@ -451,7 +495,7 @@ footer .footer-link a {
         justify-content: space-between;
     }
     .early-access .container .wrapper .early-access-text{
-        width: 32%;
+        width: 30%;
         margin-top: 0px;
     }
 
