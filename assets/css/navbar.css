@@ -29,7 +29,7 @@ header{
     transition: .3s ease-in-out;
 }
 .navbar .menu_list{
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
