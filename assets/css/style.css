@@ -194,7 +194,7 @@ section.right-bg::after{
  .newsletter {
      margin-top: 100px;
  }
- .form form{
+ .form form div{
      position: relative;
      margin-bottom: 30px;
      margin-top: 40px;
@@ -202,12 +202,12 @@ section.right-bg::after{
      justify-content: space-between;
      max-width: 500px;
  }
- .newsletter .form form{
+ .newsletter .form form div{
      
      margin-left: auto;
      margin-right: auto;
  }
- .form form [type='email']{
+ .form form div [type='email']{
     width: 85%;
     padding: 20px;
     border: 1px solid #E8692B;
@@ -215,7 +215,7 @@ section.right-bg::after{
     display: block;
     border-radius: 5px;
  }
- .form form button{
+ .form form div button{
      padding: 10px;
      width: 13%;
      height: 63px;
@@ -227,6 +227,8 @@ section.right-bg::after{
      margin-left: 5px;
      border-radius: 5px;
      display: block;
+     position: relative;
+    top: 1px;
  }
 .newsletter h2,
 .newsletter p{
