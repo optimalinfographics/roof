@@ -79,9 +79,11 @@ section.sec-padding{
  Welcome Banner 
  ========================= */
 
-.banner .banner-img img{
+.banner .banner-img svg{
     width: 100%;
     margin-top: 70px;
+    height: auto;
+    position: relative;
 }
 .banner{
     padding-top: 150px;
@@ -243,7 +245,7 @@ section.right-bg::after{
 }
 .newsletter .app-store img{
     width: 153px;
-    height: auto;
+    height: 44;
 }
 
  /* =======================
@@ -409,13 +411,13 @@ footer .footer-link a {
     /* BG Layer */
     section.left-bg::before{
         content: '';
-        height: 65%;
+        height: 63%;
         width: 40%;
         bottom: 40px;
     }
     section.right-bg::after{
         content: '';
-        height: 65%;
+        height: 63%;
         width: 50%;
         bottom: 40px;
     }
@@ -425,11 +427,12 @@ footer .footer-link a {
     .container {
         max-width: 1111px;
     }
-    .banner .banner-img img{
+    .banner .banner-img svg{
         width: 100%;
         margin-right: auto;
         margin-left: auto;
         display: block;
+        margin-top: 0px !important;
     }
     section.section{
         height: 100vh;
@@ -622,13 +625,13 @@ footer .footer-link a {
         content: '';
         height: 80%;
         width: 30%;
-        bottom: 50px;
+        bottom: 30px;
     }
     section.right-bg::after{
         content: '';
         height: 80%;
         width: 30%;
-        bottom: 50px;
+        bottom: 30px;
     }
     
 }
