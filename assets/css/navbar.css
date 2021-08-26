@@ -9,8 +9,11 @@ header{
 .navbar{
     text-decoration: none;
     color: #64605F;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
+}
+.navbar a:nth-child(2){
+    color: #E8692B;
 }
 .navbar .menu_list a{
     display: block;
@@ -23,11 +26,11 @@ header{
     padding-top: 1.5em;
     padding-bottom: 1.3em ;
 }
-.navbar .menu_list a:hover{
+/* .navbar .menu_list a:hover{
     font-weight: 400;
     color: #E8692B;
     transition: .3s ease-in-out;
-}
+} */
 .navbar .menu_list{
     width: 200px;
     display: flex;

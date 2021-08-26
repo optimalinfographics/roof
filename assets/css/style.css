@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: freight-sans-pro, sans-serif;
+    font-family: "freight-sans-pro",sans-serif;
     color: #121212;
 }
 
@@ -8,15 +8,15 @@ body{
     margin: 0;
 }
 h1{
-    font-weight: 500;
+    font-weight: 600;
 }
 h2,
 h3,
 h4{
-    font-weight: 400;
+    font-weight: 500;
 }
 h2{
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 500;
 }
 h3{
@@ -109,7 +109,7 @@ section.sec-padding{
 section{
     position: relative;
 }
-section.left-bg::before{
+/* section.left-bg::before{
     content: '';
     height: 60%;
     width: 40%;
@@ -117,8 +117,28 @@ section.left-bg::before{
     position: absolute;
     background-color: #FFF0E8;
     z-index: -10;
+} */
+section.left-bg .banner-img::before{
+    content: '';
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    background-color: #FFF0E8;
+    left: -160%;
+    top: 8%;
+    z-index: -10;
 }
-section.right-bg::after{
+section.right-bg .banner-img::before{
+    content: '';
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    background-color: #FFF0E8;
+    right: -140%;
+    top: 8%;
+    z-index: -10;
+}
+/* section.right-bg::after{
     content: '';
     height: 60%;
     width: 40%;
@@ -127,7 +147,7 @@ section.right-bg::after{
     background-color: #FFF0E8;
     z-index: -10;
     right: 0px;
-}
+} */
 
 .section .section-text{
     margin-top: 80px;
@@ -245,7 +265,7 @@ section.right-bg::after{
 }
 .newsletter .app-store img{
     width: 153px;
-    height: 44;
+    height: 44px;
 }
 
  /* =======================
@@ -409,7 +429,7 @@ footer .footer-link a {
     }
 
     /* BG Layer */
-    section.left-bg::before{
+    /* section.left-bg::before{
         content: '';
         height: 63%;
         width: 40%;
@@ -420,6 +440,10 @@ footer .footer-link a {
         height: 63%;
         width: 50%;
         bottom: 40px;
+    } */
+    section.left-bg .banner-img::before,
+    section.right-bg .banner-img::before{
+        top: 6%;
     }
 }
 
@@ -443,12 +467,16 @@ footer .footer-link a {
         justify-content: space-between;
         margin-top: 80px;
     }
+    .banner .container .banner-text1{
+        max-width: 380px;
+        
+    }
     .banner .container .banner-text{
-        max-width: 600px;
+        max-width: 350px;
         
     }
     .banner-text h1{
-        font-size: 2.2em;
+        font-size: 2em;
         margin-bottom: 0px;
     }
     .container .banner-img{
@@ -561,7 +589,7 @@ footer .footer-link a {
 
 @media (min-width: 1024px){
     .section .container .section-text {
-        max-width: 350px;
+        max-width: 300px;
         margin-top: 70px;
         margin-right: 190px;
     }
@@ -570,7 +598,9 @@ footer .footer-link a {
         margin-left: 150px;
     }
     .banner .container .banner-img{
-        width: 70%;
+        width: 60%;
+        position: relative;
+        top: -80px;
     }
 
     /* BG Layer */
@@ -578,7 +608,7 @@ footer .footer-link a {
     section.right-bg{
         position: relative;
     }
-    section.left-bg::before{
+    /* section.left-bg::before{
         content: '';
         height: 80%;
         width: 30%;
@@ -589,6 +619,10 @@ footer .footer-link a {
         height: 88%;
         width: 30%;
         bottom: -40px;
+    } */
+    section.left-bg .banner-img::before,
+    section.right-bg .banner-img::before{
+        top: -1%;
     }
     
     section .banner-im img{
@@ -597,12 +631,16 @@ footer .footer-link a {
     }
 }
 @media (min-width: 1200px){
-    section.left-bg::before,
+    /* section.left-bg::before,
     section.right-bg::after{
         content: '';
         height: 79%;
         width: 30%;
         bottom: 80px;
+    } */
+    section.left-bg .banner-img::before,
+    section.right-bg .banner-img::before{
+        top: -2%;
     }
     .section .container .section-text {
         max-width: 400px;
@@ -621,7 +659,7 @@ footer .footer-link a {
     section.section{
         height: 90vh;
     }
-    section.left-bg::before{
+    /* section.left-bg::before{
         content: '';
         height: 80%;
         width: 30%;
@@ -632,6 +670,6 @@ footer .footer-link a {
         height: 80%;
         width: 30%;
         bottom: 30px;
-    }
+    } */
     
 }
