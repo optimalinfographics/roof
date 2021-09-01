@@ -31,6 +31,7 @@ p{
 section.sec-padding{
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 .container{
@@ -128,16 +129,17 @@ section.left-bg .banner-img::before{
     top: 8%;
     z-index: -10;
 }
-section.right-bg .banner-img::before{
+section.right-bg .banner-img::after{
     content: '';
     height: 100%;
     width: 200%;
     position: absolute;
     background-color: #FFF0E8;
-    right: -140%;
-    top: 8%;
+    right: -160%;
+    top: 7%;
     z-index: -10;
 }
+
 /* section.right-bg::after{
     content: '';
     height: 60%;
@@ -441,9 +443,11 @@ footer .footer-link a {
         width: 50%;
         bottom: 40px;
     } */
-    section.left-bg .banner-img::before,
-    section.right-bg .banner-img::before{
+    section.left-bg .banner-img::before{
         top: 6%;
+    }
+    section.right-bg .banner-img::after{
+        top: -1%;
     }
 }
 
